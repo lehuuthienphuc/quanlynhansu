@@ -1,78 +1,66 @@
-* {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  display: flex;
 }
 
 header {
-  background-color: #2C3E50;
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: center; /* Căn giữa theo chiều ngang */
-  align-items: center;
-  position: relative; /* Đặt vị trí để căn giữa nút đăng nhập và đăng ký */
-}
-
-header h1 {
-  font-size: 24px;
-  flex: 1;
-  text-align: center; /* Căn giữa văn bản trong tiêu đề */
-}
-
-.header-buttons {
-  position: absolute;
-  right: 20px; /* Đặt nút đăng nhập và đăng ký ở góc phải */
-  display: flex;
-  gap: 15px;
-}
-
-.header-buttons a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 15px;
-  background-color: #3498DB;
-  border-radius: 4px;
-}
-
-
-nav {
-  background-color: #34495E;
-  padding: 15px 0;
-  width: 200px; /* Đặt chiều rộng cho thanh điều hướng */
-  height: 100vh; /* Chiều cao toàn màn hình */
-  position: fixed; /* Đặt nav cố định bên trái */
+  background-color: #333;
+  color: #fff;
+  padding: 5px 20px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
+  border-bottom: 1px solid #fff;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
 }
 
-nav ul {
-  list-style: none;
-  width: 100%;
-  padding: 0;
+header .login-register {
+  margin-right: 50px; /* Kéo phần đăng nhập đăng ký về bên trái một chút */
 }
 
-nav ul li {
-  width: 100%;
-}
-
-nav ul li a {
-  display: block;
-  color: white;
+header .login-register a {
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  padding: 15px;
-  text-align: center;
+  margin-left: 15px;
 }
 
-nav ul li a:hover {
-  background-color: #1ABC9C;
+header .login-register a:hover {
+  color: #ddd;
 }
 
-.content {
-  margin-left: 220px; /* Đẩy nội dung chính sang phải để tránh bị che bởi nav */
-  padding: 20px;
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+  width: 200px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: calc(100% - 60px);
+  z-index: 5;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: #000;
+  background-color: #ddd;
+}
+
+main {
+  margin-left: 220px;
+  padding: 60px 20px 20px 20px;
+  width: calc(100% - 220px);
 }
