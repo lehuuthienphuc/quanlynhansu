@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi"> <!-- Đã sửa "lan" thành "lang" -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Đã sửa "widt" và "initial0scale" -->
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="login.component.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Đăng Nhập</h2>
+        <div class="form-group">
+            <label for="username">Tài khoản:</label>
+            <input type="text" id="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" required>
+        </div>
+        <a href="#" class="link">Quên mật khẩu?</a>
+        <div class="form-actions">
+            <button type="submit" class="login" onclick="login()">Đăng Nhập</button>
+            <button type="button" class="logout" onclick="logout()">Thoát</button>
+        </div>
+        
+    </div>
+</body>
+
+</html>
