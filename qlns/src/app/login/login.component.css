@@ -1,0 +1,75 @@
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Tăng khoảng cách giữa các nhóm */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Làm đậm nhãn */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Bo tròn cho input */
+    margin-bottom: 10px; /* Khoảng cách giữa các input */
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    width: 48%; /* Đảm bảo nút không chiếm toàn bộ chiều rộng */
+    padding: 8px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button.login {
+    background-color: #007bff; /* Màu xanh cho nút đăng nhập */
+}
+
+button.logout {
+    background-color: #dc3545; /* Màu đỏ cho nút thoát */
+}
+
+button:hover {
+    opacity: 0.9; /* Hiệu ứng hover cho nút */
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.link {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

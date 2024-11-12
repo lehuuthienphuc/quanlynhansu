@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeManagementComponent } from './employee-management/employee-management.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeManagementComponent
+    EmployeeManagementComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
