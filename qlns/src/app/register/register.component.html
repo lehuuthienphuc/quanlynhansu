@@ -1,0 +1,66 @@
+<h2>Đăng ký tài khoản</h2>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label>Tài Khoản:</label>
+    <input formControlName="taiKhoan" type="text" />
+    <div *ngIf="registerForm.get('taiKhoan')?.invalid && registerForm.get('taiKhoan')?.touched">
+      Tài khoản ít nhất 4 ký tự.
+    </div>
+  </div>
+
+  <div>
+    <label>Mật Khẩu:</label>
+    <input formControlName="matKhau" type="password" />
+    <div *ngIf="registerForm.get('matKhau')?.invalid && registerForm.get('matKhau')?.touched">
+      Mật khẩu ít nhất 6 ký tự.
+    </div>
+  </div>
+
+  <div>
+    <label>Nhập lại mật khẩu:</label>
+    <input formControlName="nhapLaiMatKhau" type="password" />
+    <div *ngIf="registerForm.errors?.['mismatch'] && registerForm.get('nhapLaiMatKhau')?.touched">
+      Mật khẩu không khớp.
+    </div>
+  </div>
+
+  <div>
+    <label>Họ và tên:</label>
+    <input formControlName="hoTen" type="text" />
+  </div>
+
+  <div>
+    <label>Giới Tính:</label>
+    <select formControlName="gioiTinh">
+      <option value="Nam">Nam</option>
+      <option value="Nữ">Nữ</option>
+    </select>
+  </div>
+
+  <div>
+    <label>Email:</label>
+    <input formControlName="email" type="email" />
+    <div *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched">
+      Định dạng email không đúng.
+    </div>
+  </div>
+
+  <div>
+    <label>Điện Thoại:</label>
+    <input formControlName="dienThoai" type="text" />
+    <div *ngIf="registerForm.get('dienThoai')?.invalid && registerForm.get('dienThoai')?.touched">
+      Điện thoại gồm 10 chữ số.
+    </div>
+  </div>
+
+  <div>
+    <label>Ngày Sinh:</label>
+    <input formControlName="ngaySinh" type="date" />
+  </div>
+
+  <!-- Group buttons inside the form -->
+  <div class="button-group">
+    <button type="submit" [disabled]="registerForm.invalid">Đăng Ký</button>
+    <button type="button">Quay Lại</button>
+  </div>
+</form>
