@@ -1,0 +1,36 @@
+.staff-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .staff-form h2 {
+    text-align: center;
+  }
+  
+  .staff-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .staff-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .staff-form .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .staff-form .form-actions {
+    text-align: right;
+  }
+  
+  .staff-form .form-actions button {
+    padding: 10px 20px;
+    margin-left: 10px;
+  }
+  

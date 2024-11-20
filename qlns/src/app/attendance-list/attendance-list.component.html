@@ -1,0 +1,36 @@
+<div class="attendance-list">
+  <h2>Danh Sách Chấm Công</h2>
+  <table class="attendance-table">
+    <thead>
+      <tr>
+        <th>MNV</th>
+        <th>HỌ TÊN</th>
+        <th>NGÀY CÔNG</th>
+        <th>NGÀY PHÉP</th>
+        <th>CHỦ NHẬT</th>
+        <th>TĂNG CA</th>
+        <th>NGÀY THƯỞNG</th>
+        <th>PHỤ CẤP</th>
+        <th>ỨNG LƯƠNG</th>
+        <th>TRỰC LÃNH</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let attendance of attendances">
+        <td>{{ attendance.employeeCode }}</td>
+        <td>{{ attendance.employeeName }}</td>
+        <td>{{ attendance.workingDays }}</td>
+        <td>{{ attendance.leaveDays }}</td>
+        <td>{{ attendance.sundays }}</td>
+        <td>{{ attendance.overtime }}</td>
+        <td>{{ attendance.rewardDays }}</td>
+        <td>{{ attendance.allowances }}</td>
+        <td>{{ attendance.advanceSalary }}</td>
+        <td>{{ attendance.totalSalary }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="form-actions">
+    <button (click)="addAttendance()">Thêm Chấm Công</button>
+  </div>
+</div>

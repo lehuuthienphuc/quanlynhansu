@@ -4,26 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quản Lý Nhân Viên</title>
-  <link rel="employee-management.component" href="src/app/employee-management/employee-management.component.css">
+  <link rel="stylesheet" href="./employee-management.component.css">
 </head>
 <body>
   <header>
     <h1>Quản Lý Nhân Viên</h1>
-    <div class="login-register">
+    <div class="login-register" *ngIf="!userEmail">
       <a routerLink="/login">Đăng nhập</a>
       <a routerLink="/register">Đăng ký</a>
     </div>
+    <div *ngIf="userEmail" class="user-info">
+      <p>Xin chào, {{ userEmail }}</p>
+      <button (click)="onLogout()">Đăng xuất</button>
+    </div>
   </header>
   <nav>
-    <a href="#">Danh sách nhân viên</a>
-    <a href="#">Thông tin nhân viên</a>
-    <a href="#">Chấm công</a>
-    <a href="#">Quản lý ca</a>
-    <a href="#">Bảng lương</a>
+    <ul>
+      <li><a routerLink="/employee-list">Danh sách nhân viên</a></li>
+      <li><a routerLink="/personnel-details">Thông tin nhân viên</a></li>
+      <li><a routerLink="/attendance-list">Chấm công</a></li>
+      <li><a routerLink="/shift-management">Quản lý ca</a></li>
+      <li><a routerLink="/payroll-list">Bảng lương</a></li>
+    </ul>
   </nav>
   <main>
-    <h2>Chào mừng bạn đến với hệ thống quản lý nhân viên</h2>
-    <p>Chọn một mục từ thanh điều hướng để bắt đầu.</p>
+    <router-outlet></router-outlet>
   </main>
 </body>
 </html>

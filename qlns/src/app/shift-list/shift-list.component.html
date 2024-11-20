@@ -1,0 +1,61 @@
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <ul>
+        <li>Danh sách nhân viên</li>
+        <li>Thông tin nhân viên</li>
+        <li>Chấm công</li>
+        <li>Quản lí ca</li>
+        <li>Bảng lương</li>
+      </ul>
+    </div>
+  
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="header">
+        <span>UserName</span>
+        <img src="https://via.placeholder.com/32" alt="User Avatar" />
+      </div>
+      <div class="content">
+        <h2>Danh sách ca làm việc</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>MNV</th>
+              <th>TÊN CA</th>
+              <th>BẮT ĐẦU</th>
+              <th>KẾT THÚC</th>
+              <th>HÀNH ĐỘNG</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let shift of shifts">
+              <td>{{ shift.id }}</td>
+              <td>{{ shift.name }}</td>
+              <td>{{ shift.start }}</td>
+              <td>{{ shift.end }}</td>
+              <td>
+                <button class="edit" (click)="editShift(shift)">[Sửa]</button>
+                <button class="delete" (click)="deleteShift(shift)">[Xóa]</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <!-- Pagination -->
+        <div class="pagination">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          ...
+          <span>30</span>
+          <select>
+            <option>10 mục trên mỗi trang</option>
+            <option>20 mục trên mỗi trang</option>
+            <option>30 mục trên mỗi trang</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  

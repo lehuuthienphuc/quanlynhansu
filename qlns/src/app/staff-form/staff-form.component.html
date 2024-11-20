@@ -1,0 +1,47 @@
+<div class="staff-form">
+    <h2>Thêm Mới Nhân Viên</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="staffCode">Mã nhân viên</label>
+        <input id="staffCode" [(ngModel)]="staff.staffCode" name="staffCode" type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="fullName">Họ và tên</label>
+        <input id="fullName" [(ngModel)]="staff.fullName" name="fullName" type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">Ngày sinh</label>
+        <input id="dob" [(ngModel)]="staff.dob" name="dob" type="date" required>
+      </div>
+      <div class="form-group">
+        <label>Giới tính</label>
+        <input id="genderFemale" [(ngModel)]="staff.gender" name="gender" type="radio" value="Nữ" required> Nữ
+        <input id="genderMale" [(ngModel)]="staff.gender" name="gender" type="radio" value="Nam" required> Nam
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" [(ngModel)]="staff.email" name="email" type="email" required>
+      </div>
+      <div class="form-group">
+        <label for="position">Vị trí</label>
+        <input id="position" [(ngModel)]="staff.position" name="position" type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="shift">Ca</label>
+        <input id="shift" [(ngModel)]="staff.shift" name="shift" type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="salary">Lương</label>
+        <input id="salary" [(ngModel)]="staff.salary" name="salary" type="number" required>
+      </div>
+      <div class="form-group">
+        <label for="startDate">Ngày vào làm</label>
+        <input id="startDate" [(ngModel)]="staff.startDate" name="startDate" type="date" required>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="save">Lưu</button>
+        <button type="button" class="cancel" (click)="onCancel()">Hủy</button>
+      </div>
+    </form>
+  </div>
+  

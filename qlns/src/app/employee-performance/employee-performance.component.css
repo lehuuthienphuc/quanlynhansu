@@ -1,0 +1,112 @@
+/* Tổng quan */
+.container {
+    display: flex;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+  }
+  
+  /* Thanh bên */
+  .sidebar {
+    width: 15%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .sidebar li:hover {
+    color: #007bff;
+  }
+  
+  /* Nội dung */
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fafafa;
+  }
+  
+  .header h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Bảng đánh giá */
+  .performance-evaluation {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .evaluation-criteria, .personal-development {
+    flex: 1;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+  }
+  
+  .feedback {
+    margin-top: 20px;
+  }
+  
+  .feedback textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Nút hành động */
+  .actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .edit-criteria {
+    background-color: #007bff;
+  }
+  
+  .edit-goals {
+    background-color: #28a745;
+  }
+  
+  .export-report {
+    background-color: #17a2b8;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  

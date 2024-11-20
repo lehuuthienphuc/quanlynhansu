@@ -1,0 +1,33 @@
+.attendance-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .attendance-list h2 {
+    text-align: center;
+  }
+  
+  .attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+  }
+  
+  .attendance-table th, .attendance-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .form-actions {
+    text-align: right;
+  }
+  
+  .form-actions button {
+    padding: 10px 20px;
+    margin-left: 10px;
+  }
+  

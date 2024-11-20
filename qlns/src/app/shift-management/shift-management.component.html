@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="sidebar">
+    <ul>
+      <li class="active">Danh sách nhân viên</li>
+      <li>Thông tin nhân viên</li>
+      <li>Chấm công</li>
+      <li>Quản lý ca</li>
+      <li>Bảng lương</li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <div class="header">
+      <h2>Tạo Ca Làm Việc</h2>
+      <div class="profile">
+        <span>UserName</span>
+        <img src="profile-icon.png" alt="User Profile">
+      </div>
+    </div>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="shiftName">Tên ca làm việc</label>
+        <input type="text" id="shiftName" [(ngModel)]="shiftName" name="shiftName" required>
+      </div>
+      <div class="form-group">
+        <label for="startTime">Thời gian bắt đầu</label>
+        <input type="time" id="startTime" [(ngModel)]="startTime" name="startTime" required>
+      </div>
+      <div class="form-group">
+        <label for="endTime">Thời gian kết thúc</label>
+        <input type="time" id="endTime" [(ngModel)]="endTime" name="endTime" required>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn save">Lưu</button>
+        <button type="button" class="btn cancel">Hủy</button>
+      </div>
+    </form>
+  </div>
+</div>

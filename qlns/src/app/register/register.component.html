@@ -27,6 +27,9 @@
   <div>
     <label>Họ và tên:</label>
     <input formControlName="hoTen" type="text" />
+    <div *ngIf="registerForm.get('hoTen')?.invalid && registerForm.get('hoTen')?.touched">
+      Họ và tên không được để trống.
+    </div>
   </div>
 
   <div>
@@ -56,11 +59,14 @@
   <div>
     <label>Ngày Sinh:</label>
     <input formControlName="ngaySinh" type="date" />
+    <div *ngIf="registerForm.get('ngaySinh')?.invalid && registerForm.get('ngaySinh')?.touched">
+      Ngày sinh không được để trống.
+    </div>
   </div>
 
   <!-- Group buttons inside the form -->
   <div class="button-group">
     <button type="submit" [disabled]="registerForm.invalid">Đăng Ký</button>
-    <button type="button">Quay Lại</button>
+    <button type="button" (click)="onBack()">Quay Lại</button>
   </div>
 </form>

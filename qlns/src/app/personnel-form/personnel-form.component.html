@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="sidebar">
+    <ul>
+      <li>Danh sách nhân viên</li>
+      <li>Thông tin nhân viên</li>
+      <li>Chấm công</li>
+      <li>Quản lí ca</li>
+      <li>Bảng lương</li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="header">
+      <h2>Thông tin nhân viên</h2>
+    </div>
+    <form>
+      <div class="row">
+        <div class="form-group">
+          <label for="employeeCode">Mã nhân viên</label>
+          <input type="text" id="employeeCode" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group">
+          <label for="fullName">Họ và tên</label>
+          <input type="text" id="fullName" />
+        </div>
+        <div class="form-group">
+          <label for="position">Vị trí</label>
+          <input type="text" id="position" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group">
+          <label for="dob">Ngày sinh</label>
+          <input type="date" id="dob" />
+        </div>
+        <div class="form-group">
+          <label for="shift">Ca</label>
+          <input type="text" id="shift" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group">
+          <label>Giới tính</label>
+          <div class="gender">
+            <input type="radio" id="female" name="gender" />
+            <label for="female">Nữ</label>
+            <input type="radio" id="male" name="gender" />
+            <label for="male">Nam</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="salary">Lương</label>
+          <input type="number" id="salary" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group">
+          <label for="startDate">Ngày vào làm</label>
+          <input type="date" id="startDate" />
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="cancel" type="button">Hủy</button>
+        <button class="save" type="submit">Lưu</button>
+      </div>
+    </form>
+  </div>
+</div>

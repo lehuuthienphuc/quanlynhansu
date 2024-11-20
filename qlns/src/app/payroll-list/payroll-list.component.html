@@ -1,0 +1,68 @@
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <ul>
+        <li>Danh sách nhân viên</li>
+        <li>Thông tin nhân viên</li>
+        <li>Chấm công</li>
+        <li>Quản lí ca</li>
+        <li>Bảng lương</li>
+      </ul>
+    </div>
+  
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="header">
+        <span>UserName</span>
+        <img src="https://via.placeholder.com/32" alt="User Avatar" />
+      </div>
+      <div class="content">
+        <h2>Bảng Lương Nhân Viên</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>MNV</th>
+              <th>HỌ TÊN</th>
+              <th>NGÀY CÔNG</th>
+              <th>NGÀY PHÉP</th>
+              <th>CHỦ NHẬT</th>
+              <th>TĂNG CA</th>
+              <th>NGÀY THƯỞNG</th>
+              <th>PHỤ CẤP</th>
+              <th>ỨNG LƯƠNG</th>
+              <th>TRỰC LÃNH</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let payroll of payrolls">
+              <td>{{ payroll.id }}</td>
+              <td>{{ payroll.name }}</td>
+              <td>{{ payroll.workDays }}</td>
+              <td>{{ payroll.leaveDays }}</td>
+              <td>{{ payroll.sundays }}</td>
+              <td>{{ payroll.overtime }}</td>
+              <td>{{ payroll.bonus }}</td>
+              <td>{{ payroll.allowance }}</td>
+              <td>{{ payroll.advanceSalary }}</td>
+              <td>{{ payroll.netSalary }}</td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <!-- Pagination -->
+        <div class="pagination">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          ...
+          <span>30</span>
+          <select>
+            <option>10 mục trên mỗi trang</option>
+            <option>20 mục trên mỗi trang</option>
+            <option>30 mục trên mỗi trang</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  
