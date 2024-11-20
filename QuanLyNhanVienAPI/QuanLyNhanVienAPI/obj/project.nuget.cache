@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y0bXVVGOeMc=",
+  "dgSpecHash": "CCuRs5ME4Ns=",
   "success": true,
-  "projectFilePath": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj",
+  "projectFilePath": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lehuu\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\lehuu\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",

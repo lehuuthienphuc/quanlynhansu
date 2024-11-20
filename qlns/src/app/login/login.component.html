@@ -1,4 +1,6 @@
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+<div class="login-container">
+  <h2>Đăng Nhập</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="email">Email</label>
       <input type="email" id="email" formControlName="email" class="form-control" placeholder="Nhập email">
@@ -8,11 +10,22 @@
       <label for="password">Mật khẩu</label>
       <input type="password" id="password" formControlName="password" class="form-control" placeholder="Nhập mật khẩu">
     </div>
+
+    <!-- Nút "Quên mật khẩu" -->
+    <div class="forgot-password">
+      <a routerLink="/forgot-password" class="link">Quên mật khẩu?</a>
+    </div>
   
-    <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Đăng nhập</button>
-  
+    <div class="form-actions">
+      <!-- Nút đăng nhập -->
+      <button type="submit" class="btn login" [disabled]="loginForm.invalid">Đăng nhập</button>
+      <!-- Nút thoát -->
+      <button type="button" class="btn logout" (click)="onExit()">Thoát</button>
+    </div>
+
     <!-- Hiển thị thông báo lỗi nếu có -->
     <div *ngIf="errorMessage" class="alert alert-danger mt-3">
       {{ errorMessage }}
     </div>
   </form>
+</div>

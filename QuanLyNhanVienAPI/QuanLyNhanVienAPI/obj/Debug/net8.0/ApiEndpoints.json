@@ -2,7 +2,7 @@
   {
     "ContainingType": "QuanLyNhanVienAPI.Controllers.AuthController",
     "Method": "ForgotPassword",
-    "RelativePath": "api/Auth/forgot-password",
+    "RelativePath": "api/auth/forgot-password",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -18,7 +18,7 @@
   {
     "ContainingType": "QuanLyNhanVienAPI.Controllers.AuthController",
     "Method": "Login",
-    "RelativePath": "api/Auth/login",
+    "RelativePath": "api/auth/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -34,7 +34,7 @@
   {
     "ContainingType": "QuanLyNhanVienAPI.Controllers.AuthController",
     "Method": "Register",
-    "RelativePath": "api/Auth/register",
+    "RelativePath": "api/auth/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -45,6 +45,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanLyNhanVienAPI.Controllers.AuthController",
+    "Method": "TestLogin",
+    "RelativePath": "api/auth/test-login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

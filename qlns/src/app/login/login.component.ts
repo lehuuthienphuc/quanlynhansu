@@ -26,29 +26,30 @@ export class LoginComponent implements OnInit {
   }
 
   // Khi người dùng submit form
-  onSubmit() {
-    console.log('Form submitted');  // Kiểm tra xem phương thức có được gọi không
+  onSubmit(): void {
     if (this.loginForm.valid) {
       const credentials = this.loginForm.value;
   
-      // Gọi API đăng nhập
       this.authService.login(credentials).subscribe(
-        (response: any) => {  // Chỉ định kiểu cho response
+        (response: any) => {
           if (response && response.Message === "Đăng nhập thành công.") {
-            // Lưu email vào localStorage
-            localStorage.setItem('userEmail', credentials.email);
-            // Điều hướng đến trang Employee Management
-            this.router.navigate(['/employee-management']);
+            localStorage.setItem('userEmail', credentials.email);  // Lưu email vào localStorage
+            this.router.navigate(['/employee-management']);  // Điều hướng đến trang quản lý nhân viên
           }
         },
-        (error: any) => {  // Chỉ định kiểu cho error
-          console.error('Login failed', error);
-          this.errorMessage = 'Đăng nhập không thành công. Vui lòng kiểm tra lại tài khoản và mật khẩu.'; // Thông báo lỗi
+        (error: any) => {
+          // Lấy thông báo lỗi từ backend, nếu có
+          this.errorMessage = error?.error?.Message || 'Đăng nhập không thành công. Vui lòng kiểm tra lại tài khoản và mật khẩu.';
         }
       );
     } else {
-      this.errorMessage = 'Vui lòng nhập đầy đủ thông tin đăng nhập.'; // Thông báo nếu form không hợp lệ
+      this.errorMessage = 'Vui lòng nhập đầy đủ thông tin đăng nhập.';
     }
   }
-  
+
+  // Thêm phương thức onExit để xử lý khi người dùng nhấn nút "Thoát"
+  onExit(): void {
+    // Bạn có thể xử lý logic khi thoát, ví dụ như đóng cửa sổ hoặc điều hướng về trang khác
+    this.router.navigate(['/home']); // Điều hướng về trang chủ hoặc trang khác
+  }
 }

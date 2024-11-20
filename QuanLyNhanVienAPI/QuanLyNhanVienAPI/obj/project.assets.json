@@ -1201,11 +1201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj",
+      "projectUniqueName": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj",
       "projectName": "QuanLyNhanVienAPI",
-      "projectPath": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj",
+      "projectPath": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj",
       "packagesPath": "C:\\Users\\lehuu\\.nuget\\packages\\",
-      "outputPath": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\obj\\",
+      "outputPath": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lehuu\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -12,21 +12,21 @@ h2 {
 }
 
 .form-group {
-    margin-bottom: 15px; /* Tăng khoảng cách giữa các nhóm */
+    margin-bottom: 15px;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold; /* Làm đậm nhãn */
+    font-weight: bold;
 }
 
-input[type="text"], input[type="password"] {
+input[type="email"], input[type="password"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px; /* Bo tròn cho input */
-    margin-bottom: 10px; /* Khoảng cách giữa các input */
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
 .form-actions {
@@ -36,7 +36,7 @@ input[type="text"], input[type="password"] {
 }
 
 button {
-    width: 48%; /* Đảm bảo nút không chiếm toàn bộ chiều rộng */
+    width: 48%;
     padding: 8px;
     color: white;
     border: none;
@@ -46,15 +46,15 @@ button {
 }
 
 button.login {
-    background-color: #007bff; /* Màu xanh cho nút đăng nhập */
+    background-color: #007bff;
 }
 
 button.logout {
-    background-color: #dc3545; /* Màu đỏ cho nút thoát */
+    background-color: #dc3545;
 }
 
 button:hover {
-    opacity: 0.9; /* Hiệu ứng hover cho nút */
+    opacity: 0.9;
 }
 
 button:disabled {

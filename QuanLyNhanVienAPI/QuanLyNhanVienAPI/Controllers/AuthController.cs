@@ -3,8 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using QuanLyNhanVienAPI.Data;
 using QuanLyNhanVienAPI.DTOs;
 using QuanLyNhanVienAPI.Models;
-using BCrypt.Net;
-using System;
+
 
 namespace QuanLyNhanVienAPI.Controllers
 {
@@ -22,18 +21,16 @@ namespace QuanLyNhanVienAPI.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginRequestDto request)
         {
-            // Kiểm tra xem người dùng có tồn tại không
             var user = await _context.NguoiDungs
                 .FirstOrDefaultAsync(x => x.Email == request.Email);
 
             if (user == null)
                 return Unauthorized(new { Message = "Tài khoản không tồn tại." });
 
-            // So sánh mật khẩu người dùng nhập vào với mật khẩu lưu trong cơ sở dữ liệu
             if (user.MatKhau != request.MatKhau)
                 return Unauthorized(new { Message = "Tài khoản hoặc mật khẩu không đúng." });
 
-            // Thông báo thành công và trả về thông tin người dùng
+            // Trả về thông tin người dùng khi đăng nhập thành công
             return Ok(new
             {
                 Message = "Đăng nhập thành công.",
@@ -41,26 +38,29 @@ namespace QuanLyNhanVienAPI.Controllers
                 {
                     user.HoTen,
                     user.Email,
-                    user.VaiTro,
-                    LoginTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
+                    user.VaiTro
                 }
             });
         }
 
+
+        // Đăng ký
         [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterRequestDto request)
         {
+            // Kiểm tra email đã tồn tại
             var existingUser = await _context.NguoiDungs
                 .FirstOrDefaultAsync(x => x.Email == request.Email);
 
             if (existingUser != null)
                 return BadRequest(new { Message = "Email đã tồn tại." });
 
+            // Tạo người dùng mới
             var newUser = new NguoiDung
             {
                 HoTen = request.HoTen,
                 Email = request.Email,
-                MatKhau = request.MatKhau, // Mật khẩu nên được mã hóa, nhưng ở đây dùng thẳng để đơn giản
+                MatKhau = request.MatKhau, // Mật khẩu lưu trực tiếp
                 VaiTro = "User",
                 NgayDangKy = DateTime.Now
             };
@@ -70,20 +70,30 @@ namespace QuanLyNhanVienAPI.Controllers
 
             return Ok(new { Message = "Đăng ký thành công." });
         }
+
+        // Quên mật khẩu
         [HttpPost("forgot-password")]
         public async Task<IActionResult> ForgotPassword(ForgotPasswordRequestDto request)
         {
+            // Tìm người dùng theo email
             var user = await _context.NguoiDungs
                 .FirstOrDefaultAsync(x => x.Email == request.Email);
 
             if (user == null)
-                return BadRequest("Email không tồn tại.");
+                return BadRequest(new { Message = "Email không tồn tại." });
 
             // Cập nhật mật khẩu mới
-            user.MatKhau = BCrypt.Net.BCrypt.HashPassword(request.NewPassword);
+            user.MatKhau = request.NewPassword; // Lưu mật khẩu mới trực tiếp
             await _context.SaveChangesAsync();
 
-            return Ok("Mật khẩu đã được cập nhật.");
+            return Ok(new { Message = "Mật khẩu đã được cập nhật." });
+        }
+
+        // Phương thức GET kiểm tra API (dùng để kiểm tra)
+        [HttpGet("test-login")]
+        public IActionResult TestLogin()
+        {
+            return Ok("API đang hoạt động. Hãy gửi POST request để đăng nhập.");
         }
     }
 }
