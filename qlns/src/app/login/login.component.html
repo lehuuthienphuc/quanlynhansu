@@ -2,9 +2,9 @@
   <h2>Đăng Nhập</h2>
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
-      <label for="username">Tài khoản</label>
-      <input id="username" [(ngModel)]="credentials.username" name="username" placeholder="Tài khoản" required class="form-control">
-      <div *ngIf="!credentials.username" class="error-message">Tài khoản không được để trống.</div>
+      <label for="email">Email</label> <!-- Thay đổi tên trường thành Email -->
+      <input id="email" [(ngModel)]="credentials.email" name="email" placeholder="Email" required class="form-control">
+      <div *ngIf="!credentials.email" class="error-message">Email không được để trống.</div>
     </div>
 
     <div class="form-group">
@@ -18,7 +18,7 @@
     </div>
 
     <div class="form-actions">
-      <button type="submit" [disabled]="!credentials.username || !credentials.password || isSubmitting" class="btn login">
+      <button type="submit" [disabled]="!credentials.email || !credentials.password || isSubmitting" class="btn login">
         <span *ngIf="isSubmitting">Đang xử lý...</span>
         <span *ngIf="!isSubmitting">Đăng nhập</span>
       </button>

@@ -9,24 +9,33 @@
 <body>
   <header>
     <h1>Quản Lý Nhân Viên</h1>
+    
+    <!-- Hiển thị liên kết đăng nhập và đăng ký nếu chưa đăng nhập -->
     <div class="login-register" *ngIf="!userEmail">
       <a routerLink="/login">Đăng nhập</a>
       <a routerLink="/register">Đăng ký</a>
     </div>
+
+    <!-- Hiển thị thông tin người dùng và nút đăng xuất nếu đã đăng nhập -->
     <div *ngIf="userEmail" class="user-info">
       <p>Xin chào, {{ userEmail }}</p>
       <button (click)="onLogout()">Đăng xuất</button>
     </div>
   </header>
+  
+  <!-- Điều hướng tới các trang khác trong hệ thống -->
   <nav>
     <ul>
-      <li><a routerLink="/employee-list">Danh sách nhân viên</a></li>
-      <li><a routerLink="/personnel-details">Thông tin nhân viên</a></li>
+      <li><a routerLink="employee-list">Danh sách nhân viên</a></li>
+      <li><a routerLink="/personnel-form">Thông tin nhân viên</a></li>
       <li><a routerLink="/attendance-list">Chấm công</a></li>
-      <li><a routerLink="/shift-management">Quản lý ca</a></li>
+      <li><a routerLink="shift-management">Quản lý ca</a></li>
       <li><a routerLink="/payroll-list">Bảng lương</a></li>
     </ul>
   </nav>
+  
+  
+  <!-- Khu vực chứa các thành phần điều hướng dựa trên router outlet -->
   <main>
     <router-outlet></router-outlet>
   </main>

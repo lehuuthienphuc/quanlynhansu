@@ -1,8 +1,8 @@
 <!-- Nếu đã đăng nhập, hiển thị tên email và nút đăng xuất -->
 <div *ngIf="userEmail" class="user-info">
-    <p>Đăng nhập dưới tên: {{ userEmail }}</p>
-    <button (click)="logout()">Đăng xuất</button>
-  </div>
-  
-  <!-- Router outlet để hiển thị các thành phần được định tuyến -->
-  <router-outlet></router-outlet>
+  <p>Đăng nhập dưới tên: {{ userEmail }}</p>
+  <button (click)="logout()">Đăng xuất</button>
+</div>
+
+<!-- Router outlet để hiển thị các thành phần được định tuyến -->
+<router-outlet></router-outlet>

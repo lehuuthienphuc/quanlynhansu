@@ -8,7 +8,7 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  credentials = { username: '', password: '' };  // Store username and password
+  credentials = { email: '', password: '' };  // Change username to email
   errorMessage: string = '';  // To store error messages
   isSubmitting: boolean = false;  // Tracks if the form is being submitted
 
@@ -24,8 +24,8 @@ export class LoginComponent implements OnInit {
     this.errorMessage = ''; // Clear previous error messages
 
     // Basic validation to check if fields are empty
-    if (!this.credentials.username || !this.credentials.password) {
-      this.errorMessage = 'Vui lòng nhập cả tên đăng nhập và mật khẩu.';
+    if (!this.credentials.email || !this.credentials.password) {
+      this.errorMessage = 'Vui lòng nhập cả email và mật khẩu.';
       return; // Stop execution if form is invalid
     }
 
@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
 
       if (response?.message === 'Đăng nhập thành công.') {
         // Store user data in localStorage upon successful login
-        localStorage.setItem('userEmail', response?.user?.email || this.credentials.username);
+        localStorage.setItem('userEmail', response?.user?.email || this.credentials.email);
         localStorage.setItem('userRole', response?.user?.vaiTro || '');
 
         // Redirect to the employee management page
@@ -51,7 +51,7 @@ export class LoginComponent implements OnInit {
 
       // Handle specific HTTP status codes
       if (error?.status === 401) {
-        this.errorMessage = 'Tài khoản hoặc mật khẩu không chính xác.';
+        this.errorMessage = 'Email hoặc mật khẩu không chính xác.';
       } else if (error?.status === 500) {
         this.errorMessage = 'Lỗi hệ thống. Vui lòng thử lại sau.';
       } else if (error?.status === 0) {

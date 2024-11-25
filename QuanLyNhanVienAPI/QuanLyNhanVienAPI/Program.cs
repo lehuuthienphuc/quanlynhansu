@@ -13,11 +13,14 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
-    ));
+    )
+);
 
 // Thêm các dịch vụ cơ bản
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+
+// Cấu hình Swagger
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -56,15 +59,17 @@ app.Use(async (context, next) =>
     }
     catch (Exception ex)
     {
-        // Log lỗi chi tiết vào console (chỉ dùng trong môi trường phát triển)
-        Console.WriteLine($"Chi tiết lỗi: {ex}");
+        // Log lỗi chi tiết vào logger (nên sử dụng ILogger thay vì Console.WriteLine)
+        var logger = app.Services.GetRequiredService<ILogger<Program>>();
+        logger.LogError($"Lỗi hệ thống: {ex}");
+
         context.Response.StatusCode = 500;
 
         // Trả về thông báo lỗi dạng JSON
         await context.Response.WriteAsJsonAsync(new
         {
             Error = "Đã xảy ra lỗi hệ thống. Vui lòng thử lại sau.",
-            Details = ex.Message // Thêm chi tiết lỗi để debug (chỉ nên sử dụng khi phát triển)
+            Details = app.Environment.IsDevelopment() ? ex.Message : null // Chỉ trả về chi tiết lỗi trong môi trường phát triển
         });
     }
 });
@@ -96,8 +101,9 @@ using (var scope = app.Services.CreateScope())
     try
     {
         var context = services.GetRequiredService<ApplicationDbContext>();
+
         // Kiểm tra kết nối và thực hiện migration nếu cần
-        await context.Database.EnsureCreatedAsync();
+        await context.Database.MigrateAsync(); // Ensure migrations are applied
         Console.WriteLine("Cơ sở dữ liệu đã kết nối thành công.");
     }
     catch (Exception ex)

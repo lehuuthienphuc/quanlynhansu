@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,20 +6,15 @@ import { Router } from '@angular/router';
   templateUrl: './employee-management.component.html',
   styleUrls: ['./employee-management.component.css']
 })
-export class EmployeeManagementComponent implements OnInit {
-  userEmail: string | null = null;
+export class EmployeeManagementComponent {
+  userEmail: string | null = localStorage.getItem('userEmail'); // Lấy email người dùng từ localStorage hoặc sessionStorage
 
   constructor(private router: Router) {}
 
-  ngOnInit(): void {
-    // Lấy email từ localStorage khi trang được tải
-    this.userEmail = localStorage.getItem('userEmail');
-  }
-
+  // Hàm đăng xuất
   onLogout(): void {
-    // Xóa email khỏi localStorage khi người dùng đăng xuất
-    localStorage.removeItem('userEmail');
-    // Điều hướng về trang đăng nhập
-    this.router.navigate(['/login']);
+    localStorage.removeItem('userEmail'); // Xóa email khỏi localStorage
+    this.userEmail = null; // Cập nhật lại giá trị userEmail
+    this.router.navigate(['/login']); // Điều hướng về trang đăng nhập
   }
 }

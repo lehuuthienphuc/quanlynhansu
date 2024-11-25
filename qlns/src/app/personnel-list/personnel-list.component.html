@@ -1,10 +1,9 @@
 <div class="personnel-list">
-    <h2>Danh Sách Nhân Viên</h2>
-    <ul>
-      <li *ngFor="let personnel of personnelList">
-        <a [routerLink]="['/personnel-details', personnel.id]">{{ personnel.fullName }}</a>
-      </li>
-    </ul>
-    <button (click)="showPersonnelForm()">Thêm Mới Nhân Viên</button>
-  </div>
-  
+  <h2>Danh Sách Nhân Viên</h2>
+  <ul>
+    <li *ngFor="let personnel of personnelList">
+      <a [routerLink]="['/personnel-details', personnel.id]">{{ personnel.fullName }}</a>
+    </li>
+  </ul>
+  <button (click)="showPersonnelForm()">Thêm Mới Nhân Viên</button>
+</div>
