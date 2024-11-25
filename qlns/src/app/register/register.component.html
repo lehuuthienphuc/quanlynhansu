@@ -11,6 +11,7 @@
   <div>
     <label>Mật Khẩu:</label>
     <input formControlName="matKhau" type="password" />
+    
     <div *ngIf="registerForm.get('matKhau')?.invalid && registerForm.get('matKhau')?.touched">
       Mật khẩu ít nhất 6 ký tự.
     </div>

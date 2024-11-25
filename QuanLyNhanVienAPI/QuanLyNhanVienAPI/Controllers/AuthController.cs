@@ -4,11 +4,10 @@ using QuanLyNhanVienAPI.Data;
 using QuanLyNhanVienAPI.DTOs;
 using QuanLyNhanVienAPI.Models;
 
-
 namespace QuanLyNhanVienAPI.Controllers
 {
     [ApiController]
-    [Route("api/auth")]
+    [Route("api/")]
     public class AuthController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
@@ -18,38 +17,51 @@ namespace QuanLyNhanVienAPI.Controllers
             _context = context;
         }
 
+        // Login
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginRequestDto request)
         {
-            var user = await _context.NguoiDungs
-                .FirstOrDefaultAsync(x => x.Email == request.Email);
-
-            if (user == null)
-                return Unauthorized(new { Message = "Tài khoản không tồn tại." });
-
-            if (user.MatKhau != request.MatKhau)
-                return Unauthorized(new { Message = "Tài khoản hoặc mật khẩu không đúng." });
-
-            // Trả về thông tin người dùng khi đăng nhập thành công
-            return Ok(new
+            try
             {
-                Message = "Đăng nhập thành công.",
-                User = new
-                {
-                    user.HoTen,
-                    user.Email,
-                    user.VaiTro
-                }
-            });
-        }
+                // Kiểm tra null input
+                if (string.IsNullOrWhiteSpace(request.Email) || string.IsNullOrWhiteSpace(request.MatKhau))
+                    return BadRequest(new { Message = "Email và mật khẩu không được để trống." });
 
+                // Tìm người dùng
+                var user = await _context.NguoiDung.FirstOrDefaultAsync(x => x.Email == request.Email);
+
+                if (user == null)
+                    return Unauthorized(new { Message = "Tài khoản không tồn tại." });
+
+                // Kiểm tra mật khẩu trực tiếp
+                if (request.MatKhau != user.MatKhau)
+                    return Unauthorized(new { Message = "Tài khoản hoặc mật khẩu không đúng." });
+
+                // Thành công
+                return Ok(new
+                {
+                    Message = "Đăng nhập thành công.",
+                    User = new
+                    {
+                        user.HoTen,
+                        user.Email,
+                        user.VaiTro
+                    }
+                });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi trong Login: {ex.Message}");
+                return StatusCode(500, new { Message = "Đã xảy ra lỗi trên máy chủ." });
+            }
+        }
 
         // Đăng ký
         [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterRequestDto request)
         {
             // Kiểm tra email đã tồn tại
-            var existingUser = await _context.NguoiDungs
+            var existingUser = await _context.NguoiDung
                 .FirstOrDefaultAsync(x => x.Email == request.Email);
 
             if (existingUser != null)
@@ -65,7 +77,7 @@ namespace QuanLyNhanVienAPI.Controllers
                 NgayDangKy = DateTime.Now
             };
 
-            _context.NguoiDungs.Add(newUser);
+            _context.NguoiDung.Add(newUser);
             await _context.SaveChangesAsync();
 
             return Ok(new { Message = "Đăng ký thành công." });
@@ -76,7 +88,7 @@ namespace QuanLyNhanVienAPI.Controllers
         public async Task<IActionResult> ForgotPassword(ForgotPasswordRequestDto request)
         {
             // Tìm người dùng theo email
-            var user = await _context.NguoiDungs
+            var user = await _context.NguoiDung
                 .FirstOrDefaultAsync(x => x.Email == request.Email);
 
             if (user == null)

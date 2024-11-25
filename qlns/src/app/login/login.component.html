@@ -1,29 +1,30 @@
 <div class="login-container">
   <h2>Đăng Nhập</h2>
-  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <form (ngSubmit)="onSubmit()">
     <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" id="email" formControlName="email" class="form-control" placeholder="Nhập email">
-    </div>
-  
-    <div class="form-group">
-      <label for="password">Mật khẩu</label>
-      <input type="password" id="password" formControlName="password" class="form-control" placeholder="Nhập mật khẩu">
+      <label for="username">Tài khoản</label>
+      <input id="username" [(ngModel)]="credentials.username" name="username" placeholder="Tài khoản" required class="form-control">
+      <div *ngIf="!credentials.username" class="error-message">Tài khoản không được để trống.</div>
     </div>
 
-    <!-- Nút "Quên mật khẩu" -->
+    <div class="form-group">
+      <label for="password">Mật khẩu</label>
+      <input id="password" [(ngModel)]="credentials.password" name="password" placeholder="Mật khẩu" type="password" required class="form-control">
+      <div *ngIf="!credentials.password" class="error-message">Mật khẩu không được để trống.</div>
+    </div>
+
     <div class="forgot-password">
       <a routerLink="/forgot-password" class="link">Quên mật khẩu?</a>
     </div>
-  
+
     <div class="form-actions">
-      <!-- Nút đăng nhập -->
-      <button type="submit" class="btn login" [disabled]="loginForm.invalid">Đăng nhập</button>
-      <!-- Nút thoát -->
+      <button type="submit" [disabled]="!credentials.username || !credentials.password || isSubmitting" class="btn login">
+        <span *ngIf="isSubmitting">Đang xử lý...</span>
+        <span *ngIf="!isSubmitting">Đăng nhập</span>
+      </button>
       <button type="button" class="btn logout" (click)="onExit()">Thoát</button>
     </div>
 
-    <!-- Hiển thị thông báo lỗi nếu có -->
     <div *ngIf="errorMessage" class="alert alert-danger mt-3">
       {{ errorMessage }}
     </div>

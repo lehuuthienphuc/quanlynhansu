@@ -1,25 +1,23 @@
-﻿using QuanLyNhanVienAPI.Data;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using QuanLyNhanVienAPI.Data;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Thêm logging
+// Thêm Logging
+builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 
-// Add services to the container.
+// Cấu hình DbContext sử dụng MySQL
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
-    )
-);
+    ));
 
-// Thêm dịch vụ Controller
+// Thêm các dịch vụ cơ bản
 builder.Services.AddControllers();
-
-// Add Swagger configuration
-builder.Services.AddEndpointsApiExplorer(); // Enable API exploration
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -36,53 +34,79 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Cấu hình CORS
+// Cấu hình CORS (Cross-Origin Resource Sharing) cho phép frontend Angular kết nối
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowSpecificOrigins", policy =>
+    options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:4200")  // Frontend URL
-              .AllowAnyMethod()  // Cho phép tất cả các phương thức HTTP
-              .AllowAnyHeader()  // Cho phép tất cả các header
-              .AllowCredentials(); // Cho phép cookies nếu cần
+        policy.WithOrigins("http://localhost:4200") // Địa chỉ frontend Angular
+              .AllowAnyMethod()
+              .AllowAnyHeader();
     });
 });
 
 var app = builder.Build();
 
-// Enable CORS middleware
-app.UseCors("AllowSpecificOrigins"); // CORS phải được gọi trước UseRouting()
-
-// Thêm middleware để xử lý lỗi toàn cục (Global Error Handling)
+// Middleware xử lý lỗi toàn cục
 app.Use(async (context, next) =>
 {
     try
     {
-        await next(); // Tiếp tục middleware tiếp theo
+        await next();
     }
     catch (Exception ex)
     {
-        Console.WriteLine($"Lỗi hệ thống: {ex.Message}");
+        // Log lỗi chi tiết vào console (chỉ dùng trong môi trường phát triển)
+        Console.WriteLine($"Chi tiết lỗi: {ex}");
         context.Response.StatusCode = 500;
-        await context.Response.WriteAsJsonAsync(new { message = "Có lỗi xảy ra. Vui lòng thử lại sau!" });
+
+        // Trả về thông báo lỗi dạng JSON
+        await context.Response.WriteAsJsonAsync(new
+        {
+            Error = "Đã xảy ra lỗi hệ thống. Vui lòng thử lại sau.",
+            Details = ex.Message // Thêm chi tiết lỗi để debug (chỉ nên sử dụng khi phát triển)
+        });
     }
 });
 
-// Enable middleware to serve generated Swagger as a JSON endpoint
-app.UseSwagger();
+// Kích hoạt CORS
+app.UseCors("AllowFrontend");
 
-// Enable middleware to serve Swagger-UI (HTML, JS, CSS, etc.)
-app.UseSwaggerUI(c =>
+// Kích hoạt Swagger trong môi trường phát triển để dễ dàng kiểm tra API
+if (app.Environment.IsDevelopment())
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "QuanLyNhanVienAPI v1");
-    c.RoutePrefix = "swagger"; // URL để truy cập Swagger
-});
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "QuanLyNhanVienAPI v1");
+        c.RoutePrefix = "swagger"; // Định nghĩa URL để truy cập Swagger UI
+    });
+}
 
 // Redirect HTTP -> HTTPS
 app.UseHttpsRedirection();
 
-// Map routes cho API
+// Map các route cho controller
 app.MapControllers();
+
+// Kiểm tra kết nối cơ sở dữ liệu khi ứng dụng khởi chạy
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<ApplicationDbContext>();
+        // Kiểm tra kết nối và thực hiện migration nếu cần
+        await context.Database.EnsureCreatedAsync();
+        Console.WriteLine("Cơ sở dữ liệu đã kết nối thành công.");
+    }
+    catch (Exception ex)
+    {
+        // Xử lý khi kết nối cơ sở dữ liệu thất bại
+        Console.WriteLine($"Lỗi khi kết nối cơ sở dữ liệu: {ex.Message}");
+        throw;
+    }
+}
 
 // Chạy ứng dụng
 app.Run();
