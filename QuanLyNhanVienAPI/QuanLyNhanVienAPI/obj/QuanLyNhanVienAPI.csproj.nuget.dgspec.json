@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj": {}
+    "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj": {}
   },
   "projects": {
-    "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj": {
+    "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj",
+        "projectUniqueName": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj",
         "projectName": "QuanLyNhanVienAPI",
-        "projectPath": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj",
+        "projectPath": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj",
         "packagesPath": "C:\\Users\\lehuu\\.nuget\\packages\\",
-        "outputPath": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\obj\\",
+        "outputPath": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lehuu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,6 +49,22 @@
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.1.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",

@@ -1,0 +1,16 @@
+/* Nút Sửa với màu nền xanh lá và chữ trắng */
+.edit-button {
+    background-color: #28a745; /* Màu xanh lá */
+    color: white; /* Chữ màu trắng */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Bo góc */
+    transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho nút */
+.edit-button:hover {
+    background-color: #218838; /* Màu xanh lá đậm hơn khi hover */
+}

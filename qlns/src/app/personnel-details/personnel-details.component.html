@@ -1,1 +1,27 @@
-<p>personnel-details works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin nhân viên</title>
+    <link rel="stylesheet" href="personnel-details.component.css">
+</head>
+<body>
+    <header>
+        <h2>Thông tin nhân viên</h2>
+        <div *ngIf="employee">
+            <p>Mã nhân viên: {{ employee.id }}</p>
+            <p>Email: {{ employee.email }}</p>
+            <p>Họ và tên: {{ employee.fullName }}</p>
+            <p>Vị trí: {{ employee.position }}</p>
+            <p>Ngày sinh: {{ employee.dob }}</p>
+            <p>Ca: {{ employee.shift }}</p>
+            <p>Giới tính: {{ employee.gender }}</p>
+            <p>Lương: {{ employee.salary }}</p>
+            <p>Ngày vào làm: {{ employee.startDate }}</p>
+            <!-- Nút Sửa -->
+            <button class="edit-button" (click)="onEdit">Sửa</button>
+        </div>
+    </header>
+</body>
+</html>

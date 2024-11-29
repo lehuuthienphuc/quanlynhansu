@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 export class RegisterComponent implements OnInit {
   registerForm!: FormGroup;
 
-  constructor(private fb: FormBuilder, private router: Router) {}
+  constructor(private fb: FormBuilder, private router: Router, private http: HttpClient) {}
 
   ngOnInit() {
     this.registerForm = this.fb.group({
@@ -28,8 +29,9 @@ export class RegisterComponent implements OnInit {
   onSubmit() {
     if (this.registerForm.valid) {
       console.log('Form Submitted', this.registerForm.value);
-      // Add logic to send data to the server
-      this.router.navigate(['/login']);  // Navigate to login page after successful registration
+      this.http.post("https://localhost:7120/api/register", this.registerForm.value).subscribe((data: any) => {
+        this.router.navigate(['/login']);  // Navigate to login page after successful registration
+      });
     }
   }
 

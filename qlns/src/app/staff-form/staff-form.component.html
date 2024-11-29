@@ -1,47 +1,206 @@
-<div class="staff-form">
-    <h2>Thêm Mới Nhân Viên</h2>
-    <form (ngSubmit)="onSubmit()">
-      <div class="form-group">
-        <label for="staffCode">Mã nhân viên</label>
-        <input id="staffCode" [(ngModel)]="staff.staffCode" name="staffCode" type="text" required>
-      </div>
-      <div class="form-group">
-        <label for="fullName">Họ và tên</label>
-        <input id="fullName" [(ngModel)]="staff.fullName" name="fullName" type="text" required>
-      </div>
-      <div class="form-group">
-        <label for="dob">Ngày sinh</label>
-        <input id="dob" [(ngModel)]="staff.dob" name="dob" type="date" required>
-      </div>
-      <div class="form-group">
-        <label>Giới tính</label>
-        <input id="genderFemale" [(ngModel)]="staff.gender" name="gender" type="radio" value="Nữ" required> Nữ
-        <input id="genderMale" [(ngModel)]="staff.gender" name="gender" type="radio" value="Nam" required> Nam
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input id="email" [(ngModel)]="staff.email" name="email" type="email" required>
-      </div>
-      <div class="form-group">
-        <label for="position">Vị trí</label>
-        <input id="position" [(ngModel)]="staff.position" name="position" type="text" required>
-      </div>
-      <div class="form-group">
-        <label for="shift">Ca</label>
-        <input id="shift" [(ngModel)]="staff.shift" name="shift" type="text" required>
-      </div>
-      <div class="form-group">
-        <label for="salary">Lương</label>
-        <input id="salary" [(ngModel)]="staff.salary" name="salary" type="number" required>
-      </div>
-      <div class="form-group">
-        <label for="startDate">Ngày vào làm</label>
-        <input id="startDate" [(ngModel)]="staff.startDate" name="startDate" type="date" required>
-      </div>
-      <div class="form-actions">
-        <button type="submit" class="save">Lưu</button>
-        <button type="button" class="cancel" (click)="onCancel()">Hủy</button>
-      </div>
-    </form>
-  </div>
-  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông Tin Nhân Viên</title>
+    <link rel="stylesheet" href="staff-form.component.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <ul>
+          <li><a routerLink="/employee-list">Danh sách nhân viên</a></li>
+          <li>Thông tin nhân viên</li>
+          <li>Chấm công</li>
+          <li>Quản lý ca</li>
+          <li>Bảng lương</li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <h2>Thêm Mới Nhân Viên</h2>
+        <form (ngSubmit)="onSubmit(staffForm)" #staffForm="ngForm" class="employee-form">
+          <!-- Mã Nhân Viên -->
+          <div class="form-group">
+            <label for="staffCode">Mã nhân viên</label>
+            <input
+              type="text"
+              id="staffCode"
+              name="staffCode"
+              [(ngModel)]="staff.manhanvien"
+              placeholder="Nhập mã nhân viên"
+              required
+            />
+            <div *ngIf="staffForm.submitted && !staff.manhanvien" class="error">
+              Mã nhân viên là bắt buộc.
+            </div>
+          </div>
+
+          <!-- Họ và Tên -->
+          <div class="form-group">
+            <label for="fullName">Họ và tên</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              [(ngModel)]="staff.hoten"
+              placeholder="Nhập họ và tên"
+              required
+            />
+            <div *ngIf="staffForm.submitted && !staff.hoten" class="error">
+              Họ và tên là bắt buộc.
+            </div>
+          </div>
+
+          <!-- Ngày Sinh -->
+          <div class="form-group">
+            <label for="dob">Ngày sinh</label>
+            <input
+              type="date"
+              id="dob"
+              name="dob"
+              [(ngModel)]="staff.ngaysinh"
+              required
+            />
+            <div *ngIf="staffForm.submitted && !staff.ngaysinh" class="error">
+              Ngày sinh là bắt buộc.
+            </div>
+          </div>
+
+          <!-- Giới Tính -->
+          <div class="form-group">
+            <label>Giới tính</label>
+            <div class="gender-options">
+              <label>
+                <input
+                  type="radio"
+                  name="gender"
+                  [(ngModel)]="staff.gioitinh"
+                  value="female"
+                  required
+                />
+                Nữ
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="gender"
+                  [(ngModel)]="staff.gioitinh"
+                  value="male"
+                  required
+                />
+                Nam
+              </label>
+            </div>
+            <div *ngIf="staffForm.submitted && !staff.gioitinh" class="error">
+              Giới tính là bắt buộc.
+            </div>
+          </div>
+
+          <!-- Ngày Vào Làm -->
+          <div class="form-group">
+            <label for="startDate">Ngày vào làm</label>
+            <input
+              type="date"
+              id="startDate"
+              name="startDate"
+              [(ngModel)]="staff.ngayvaolam"
+              required
+            />
+            <div *ngIf="staffForm.submitted && !staff.ngayvaolam" class="error">
+              Ngày vào làm là bắt buộc.
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              [(ngModel)]="staff.email"
+              placeholder="Nhập email"
+              required
+            />
+            <div *ngIf="staffForm.submitted && !staff.email" class="error">
+              Email là bắt buộc.
+            </div>
+          </div>
+
+          <!-- Vị Trí -->
+          <div class="form-group">
+            <label for="position">Vị trí</label>
+            <input
+              type="text"
+              id="position"
+              name="position"
+              [(ngModel)]="staff.vitri"
+              placeholder="Nhập vị trí"
+              required
+            />
+            <div *ngIf="staffForm.submitted && !staff.vitri" class="error">
+              Vị trí là bắt buộc.
+            </div>
+          </div>
+
+          <!-- Ca -->
+          <div class="form-group">
+            <label for="shift">Ca</label>
+            <input
+              type="text"
+              id="shift"
+              name="shift"
+              [(ngModel)]="staff.calamviec"
+              placeholder="Nhập ca làm việc"
+            />
+          </div>
+
+          <!-- Lương -->
+          <div class="form-group">
+            <label for="salary">Lương</label>
+            <input
+              type="number"
+              id="salary"
+              name="salary"
+              [(ngModel)]="staff.luong"
+              placeholder="Nhập mức lương"
+              min="0"
+              required
+            />
+            <div
+              *ngIf="staffForm.submitted && (staff.luong === null || staff.luong <= 0)"
+              class="error"
+            >
+              Lương phải là một số dương.
+            </div>
+          </div>
+
+          <!-- Nút Hành Động -->
+          <div class="form-actions">
+            <button type="button" class="cancel-btn" routerLink="/employee-list">
+              Hủy
+            </button>
+            <button
+              type="submit"
+              class="save-btn"
+              [disabled]="staffForm.invalid"
+            >
+              Lưu
+            </button>
+          </div>
+        </form>
+        <!-- Thông báo kết quả -->
+        <div *ngIf="successMessage" class="success-message">
+          {{ successMessage }}
+        </div>
+        <div *ngIf="errorMessage" class="error-message">
+          {{ errorMessage }}
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

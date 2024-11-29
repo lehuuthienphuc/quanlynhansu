@@ -69,15 +69,12 @@ namespace QuanLyNhanVienAPI.Controllers
             if (existingUser != null)
                 return BadRequest(new { Message = "Email đã tồn tại." });
 
-            // Mã hóa mật khẩu trước khi lưu vào cơ sở dữ liệu
-            string hashedPassword = HashPassword(request.MatKhau);
-
             // Tạo người dùng mới
             var newUser = new NguoiDung
             {
                 HoTen = request.HoTen,
                 Email = request.Email,
-                MatKhau = hashedPassword, // Lưu mật khẩu đã mã hóa
+                MatKhau = request.MatKhau,
                 VaiTro = "User",
                 NgayDangKy = DateTime.Now
             };

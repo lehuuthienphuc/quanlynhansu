@@ -9,17 +9,24 @@ import { AttendanceFormComponent } from './attendance-form/attendance-form.compo
 import { AttendanceListComponent } from './attendance-list/attendance-list.component';
 import { PersonnelListComponent } from './personnel-list/personnel-list.component';
 import { PayrollListComponent } from './payroll-list/payroll-list.component';
-import { EmployeeListComponent } from './employee-list/employee-list.component'; // Thêm
-import { PersonnelDetailsComponent } from './personnel-details/personnel-details.component'; // Thêm
-import { ShiftManagementComponent } from './shift-management/shift-management.component'; // Thêm
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { PersonnelDetailsComponent } from './personnel-details/personnel-details.component';
+import { ShiftManagementComponent } from './shift-management/shift-management.component';
+import { PersonnelFormComponent } from './personnel-form/personnel-form.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/employee-management', pathMatch: 'full' },
-  { path: 'employee-management', component: EmployeeManagementComponent, children: [ // Thêm "children" cho các trang con
-    { path: 'employee-list', component: EmployeeListComponent },
-    { path: 'personnel-details', component: PersonnelDetailsComponent },
-    { path: 'shift-management', component: ShiftManagementComponent }
-  ]},
+
+  {
+    path: 'employee-management', component: EmployeeManagementComponent, children: [
+      { path: 'employee-list', component: EmployeeListComponent },
+      { path: 'personnel-details', component: PersonnelDetailsComponent }, // Đường dẫn đến form Thông Tin Nhân Viên
+      { path: 'personnel-form', component: PersonnelFormComponent },  // Thêm route cho form chỉnh sửa
+      { path: 'shift-management', component: ShiftManagementComponent },
+      { path: 'add-employee', component: StaffFormComponent},
+    ]
+  },
+
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
@@ -28,7 +35,8 @@ const routes: Routes = [
   { path: 'attendance-list', component: AttendanceListComponent },
   { path: 'personnel-list', component: PersonnelListComponent },
   { path: 'payroll-list', component: PayrollListComponent },
-  { path: '**', redirectTo: '/employee-management' }
+
+  { path: '**', redirectTo: '/employee-management/employee-list' } // Đường dẫn mặc định nếu không tìm thấy
 ];
 
 @NgModule({

@@ -1,25 +1,17 @@
 <div class="employee-list-container">
-    <div class="sidebar">
-      <ul>
-        <li>Danh sách nhân viên</li>
-        <li>Thông tin nhân viên</li>
-        <li>Chấm công</li>
-        <li>Quản lí ca</li>
-        <li>Bảng lương</li>
-      </ul>
-    </div>
     <div class="content">
       <h2>Danh Sách Nhân Viên</h2>
       <div class="action-buttons">
-        <input type="text" placeholder="Tìm kiếm" />
-        <button class="search">Tìm kiếm</button>
-        <button class="add">Thêm</button>
-        <button class="delete">Xóa</button>
+        <input type="text" placeholder="Tìm kiếm" [(ngModel)]="searchTerm"(input)="onSearch()" />
+        <button class="search" (click)="onSearch()">Tìm kiếm</button>
+        <button class="add" routerLink="/staff-form">Thêm</button>
+        <button class="delete"(click)="deleteSelectedEmployees()" [disabled]="selectedEmployeeIds.size === 0 || isLoading">Xóa</button>
       </div>
+      
       <table>
         <thead>
           <tr>
-            <th><input type="checkbox" /></th>
+            <th><input type="checkbox"  /></th>
             <th>STT</th>
             <th>Mã nhân viên</th>
             <th>Họ và Tên</th>
@@ -31,16 +23,18 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let employee of employees; let i = index">
-            <td><input type="checkbox" /></td>
+          <tr
+          *ngFor="let employee of filteredEmployees; let i = index"
+          [class.selected-row]="isSelected(employee.maNhanVien)">
+            <td><input type="checkbox" [(ngModel)]="employee.isSelected" (change)="toggleSelection(employee.maNhanVien)" /></td>
             <td>{{ i + 1 }}</td>
-            <td>{{ employee.id }}</td>
-            <td>{{ employee.name }}</td>
-            <td>{{ employee.birthdate }}</td>
-            <td>{{ employee.gender }}</td>
+            <td>{{ employee.maNhanVien }}</td>
+            <td>{{ employee.hoTen }}</td>
+            <td>{{ employee.ngaySinh | date:'dd/MM/yyyy' }}</td>  <!-- sửa -->
+            <td>{{ employee.gioitinh === 'true' ? 'Nam' : 'Nữ' }}</td>  <!-- sửa -->
             <td>{{ employee.email }}</td>
-            <td>{{ employee.position }}</td>
-            <td>{{ employee.startDate }}</td>
+            <td>{{ employee.vitri }}</td>
+            <td>{{ employee.ngayVaoLam | date:'dd/MM/yyyy'}}</td> <!-- sửa -->
           </tr>
         </tbody>
       </table>
