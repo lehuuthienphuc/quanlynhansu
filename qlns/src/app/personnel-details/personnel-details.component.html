@@ -1,1 +1,44 @@
-<p>personnel-details works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin nhân viên</title>
+    <link rel="stylesheet" href="personnel-details.component.css">
+</head>
+<body>
+    <header>
+        <h2>Thông tin nhân viên</h2>
+        <table>
+            <thead>
+                <tr>
+                  <th>Mã nhân viên</th>
+                  <th>Email</th>
+                  <th>Họ và Tên</th>
+                  <th>Vị trí</th>
+                  <th>Ngày sinh</th>
+                  <th>Ca</th>
+                  <th>Giới tính</th>
+                  <th>Lương</th>
+                  <th>Ngày vào làm</th>
+                </tr>
+              </thead>
+              <tbody *ngIf="employee && employee.length > 0">
+                <tr *ngFor="let emp of employee">
+                  <td>{{ emp.maNhanVien }}</td>
+                  <td>{{ emp.email }}</td>
+                  <td>{{ emp.hoTen }}</td>
+                  <td>{{ emp.vitri }}</td>
+                  <td>{{ emp.ngaySinh | date:'dd/MM/yyyy'}}</td>
+                  <td>{{ emp.calamviec }}</td>
+                  <td>{{ emp.gioiTinh }}</td>
+                  <td>{{ emp.luong }}</td>
+                  <td>{{ emp.ngayVaoLam | date:'dd/MM/yyyy'}}</td>
+                  <!-- Nút Sửa -->
+                  <button class="edit-button" (click)="onEdit(emp.maNhanVien)">Sửa</button>
+                </tr>
+              </tbody>              
+        </table>
+    </header>
+</body>
+</html>

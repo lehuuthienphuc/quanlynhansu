@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -11,13 +12,15 @@ export class LoginComponent implements OnInit {
   credentials = { email: '', password: '' };  // Change username to email
   errorMessage: string = '';  // To store error messages
   isSubmitting: boolean = false;  // Tracks if the form is being submitted
+  loginForm!: FormGroup;
 
   constructor(
+    private fb: FormBuilder,
     private authService: AuthService,
     private router: Router
-  ) {}
+  ) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   // Submit the login form
   async onSubmit(): Promise<void> {
@@ -31,9 +34,15 @@ export class LoginComponent implements OnInit {
 
     this.isSubmitting = true; // Start the login process
 
+    this.loginForm = this.fb.group({
+      email: this.credentials.email,
+      password: this.credentials.password
+    })
+
+
     try {
       // Call the login method from AuthService
-      const response: any = await this.authService.login(this.credentials).toPromise();
+      const response: any = await this.authService.login(this.loginForm.value).toPromise();
 
       if (response?.message === 'Đăng nhập thành công.') {
         // Store user data in localStorage upon successful login

@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class EmployeeManagementComponent {
   userEmail: string | null = localStorage.getItem('userEmail'); // Lấy email người dùng từ localStorage hoặc sessionStorage
+selectedEmployeeId: any|string;
 
   constructor(private router: Router) {}
 

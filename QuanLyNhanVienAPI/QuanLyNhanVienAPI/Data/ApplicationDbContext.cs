@@ -8,5 +8,6 @@ namespace QuanLyNhanVienAPI.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         public DbSet<NguoiDung> NguoiDung { get; set; }
+        public DbSet<NhanVien> NhanVien { get; set; }
     }
 }

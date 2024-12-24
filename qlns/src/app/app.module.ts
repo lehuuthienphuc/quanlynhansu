@@ -22,6 +22,7 @@ import { WorkShiftAssignmentComponent } from './work-shift-assignment/work-shift
 import { ShiftListComponent } from './shift-list/shift-list.component';
 import { PayrollListComponent } from './payroll-list/payroll-list.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

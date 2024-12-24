@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using QuanLyNhanVienAPI.Data;
 using Microsoft.OpenApi.Models;
+using QuanLyNhanVienAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,54 +37,34 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Cấu hình CORS (Cross-Origin Resource Sharing) cho phép frontend Angular kết nối
+// Cấu hình CORS (Cross-Origin Resource Sharing)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins("http://localhost:4200") // Địa chỉ frontend Angular
+        policy.WithOrigins("http://localhost:4200")
               .AllowAnyMethod()
               .AllowAnyHeader();
     });
 });
 
+// Tạo ứng dụng
 var app = builder.Build();
 
 // Middleware xử lý lỗi toàn cục
-app.Use(async (context, next) =>
-{
-    try
-    {
-        await next();
-    }
-    catch (Exception ex)
-    {
-        // Log lỗi chi tiết vào logger (nên sử dụng ILogger thay vì Console.WriteLine)
-        var logger = app.Services.GetRequiredService<ILogger<Program>>();
-        logger.LogError($"Lỗi hệ thống: {ex}");
-
-        context.Response.StatusCode = 500;
-
-        // Trả về thông báo lỗi dạng JSON
-        await context.Response.WriteAsJsonAsync(new
-        {
-            Error = "Đã xảy ra lỗi hệ thống. Vui lòng thử lại sau.",
-            Details = app.Environment.IsDevelopment() ? ex.Message : null // Chỉ trả về chi tiết lỗi trong môi trường phát triển
-        });
-    }
-});
+app.UseMiddleware<ErrorHandlerMiddleware>();
 
 // Kích hoạt CORS
 app.UseCors("AllowFrontend");
 
-// Kích hoạt Swagger trong môi trường phát triển để dễ dàng kiểm tra API
+// Kích hoạt Swagger trong môi trường phát triển
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "QuanLyNhanVienAPI v1");
-        c.RoutePrefix = "swagger"; // Định nghĩa URL để truy cập Swagger UI
+        c.RoutePrefix = "swagger";
     });
 }
 
@@ -94,21 +74,18 @@ app.UseHttpsRedirection();
 // Map các route cho controller
 app.MapControllers();
 
-// Kiểm tra kết nối cơ sở dữ liệu khi ứng dụng khởi chạy
+// Kiểm tra kết nối cơ sở dữ liệu
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     try
     {
         var context = services.GetRequiredService<ApplicationDbContext>();
-
-        // Kiểm tra kết nối và thực hiện migration nếu cần
-        await context.Database.MigrateAsync(); // Ensure migrations are applied
+        await context.Database.MigrateAsync();
         Console.WriteLine("Cơ sở dữ liệu đã kết nối thành công.");
     }
     catch (Exception ex)
     {
-        // Xử lý khi kết nối cơ sở dữ liệu thất bại
         Console.WriteLine($"Lỗi khi kết nối cơ sở dữ liệu: {ex.Message}");
         throw;
     }
@@ -116,3 +93,38 @@ using (var scope = app.Services.CreateScope())
 
 // Chạy ứng dụng
 app.Run();
+
+/// <summary>
+/// Middleware xử lý lỗi toàn cục
+/// </summary>
+public class ErrorHandlerMiddleware
+{
+    private readonly RequestDelegate _next;
+    private readonly ILogger<ErrorHandlerMiddleware> _logger;
+    private readonly IWebHostEnvironment _env;
+
+    public ErrorHandlerMiddleware(RequestDelegate next, ILogger<ErrorHandlerMiddleware> logger, IWebHostEnvironment env)
+    {
+        _next = next;
+        _logger = logger;
+        _env = env;
+    }
+
+    public async Task InvokeAsync(HttpContext context)
+    {
+        try
+        {
+            await _next(context);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Lỗi hệ thống xảy ra.");
+            context.Response.StatusCode = 500;
+            await context.Response.WriteAsJsonAsync(new
+            {
+                Error = "Đã xảy ra lỗi hệ thống. Vui lòng thử lại sau.",
+                Details = _env.IsDevelopment() ? ex.Message : null
+            });
+        }
+    }
+}

@@ -1,73 +1,139 @@
-<div class="container">
-  <div class="sidebar">
-    <ul>
-      <li>Danh sách nhân viên</li>
-      <li>Thông tin nhân viên</li>
-      <li>Chấm công</li>
-      <li>Quản lí ca</li>
-      <li>Bảng lương</li>
-    </ul>
-  </div>
-  <div class="content">
-    <div class="header">
-      <h2>Thông tin nhân viên</h2>
-    </div>
-    <form>
-      <div class="row">
-        <div class="form-group">
-          <label for="employeeCode">Mã nhân viên</label>
-          <input type="text" id="employeeCode" />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="form-group">
-          <label for="fullName">Họ và tên</label>
-          <input type="text" id="fullName" />
-        </div>
-        <div class="form-group">
-          <label for="position">Vị trí</label>
-          <input type="text" id="position" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="form-group">
-          <label for="dob">Ngày sinh</label>
-          <input type="date" id="dob" />
-        </div>
-        <div class="form-group">
-          <label for="shift">Ca</label>
-          <input type="text" id="shift" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="form-group">
-          <label>Giới tính</label>
-          <div class="gender">
-            <input type="radio" id="female" name="gender" />
-            <label for="female">Nữ</label>
-            <input type="radio" id="male" name="gender" />
-            <label for="male">Nam</label>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông Tin Nhân Viên</title>
+    <link rel="stylesheet" href="personnel-form.component.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Main Content -->
+      <main class="content">
+        <h2>Chỉnh Sửa Nhân Viên</h2>
+        <form class="employee-form" (ngSubmit)="onSubmit()">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="employee-id">Mã nhân viên</label>
+              <input
+                type="text"
+                id="employee-id"
+                [(ngModel)]="personnel.maNhanVien"
+                name="maNhanVien"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                [(ngModel)]="personnel.email"
+                name="email"
+                required
+              />
+            </div>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="salary">Lương</label>
-          <input type="number" id="salary" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="form-group">
-          <label for="startDate">Ngày vào làm</label>
-          <input type="date" id="startDate" />
-        </div>
-      </div>
-      <div class="buttons">
-        <button class="cancel" type="button">Hủy</button>
-        <button class="save" type="submit">Lưu</button>
-      </div>
-    </form>
-  </div>
-</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Họ và tên</label>
+              <input
+                type="text"
+                id="full-name"
+                [(ngModel)]="personnel.hoTen"
+                name="hoTen"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="position">Vị trí</label>
+              <input
+                type="text"
+                id="position"
+                [(ngModel)]="personnel.viTri"
+                name="vitri"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="dob">Ngày sinh</label>
+              <input
+                type="date"
+                id="dob"
+                [(ngModel)]="personnel.ngaySinh"
+                name="ngaySinh"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="shift">Ca</label>
+              <input
+                type="text"
+                id="shift"
+                [(ngModel)]="personnel.calamviec"
+                name="calamviec"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Giới tính</label>
+              <div class="gender-options">
+                <label>
+                  <input
+                    type="radio"
+                    name="gioiTinh"
+                    [(ngModel)]="personnel.gioiTinh"
+                    value="Nữ"
+                    required
+                  />
+                  Nữ
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="gioitinh"
+                    [(ngModel)]="personnel.gioiTinh"
+                    value="Nam"
+                    required
+                  />
+                  Nam
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="salary">Lương</label>
+              <input
+                type="number"
+                id="salary"
+                [(ngModel)]="personnel.luong"
+                name="luong"
+                required
+                min="0"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="start-date">Ngày vào làm</label>
+              <input
+                type="date"
+                id="start-date"
+                [(ngModel)]="personnel.ngayVaoLam"
+                name="ngayVaoLam"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="edit-btn">Sửa</button>
+            <button type="button" class="delete-btn" (click)="onCancel()">Hủy</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
