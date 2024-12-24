@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\hoc dai hoc\\nam 4\\Phát triển phần mềm chuyên nghiệp\\demo\\quanlynhansu(1)\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "D:\\hoc dai hoc\\nam 4\\Phát triển phần mềm chuyên nghiệp\\demo\\quanlynhansu(1)\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
         "outputPath": "D:\\hoc dai hoc\\nam 4\\Phát triển phần mềm chuyên nghiệp\\demo\\quanlynhansu(1)\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\obj\\",
+=======
+    "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj": {}
+  },
+  "projects": {
+    "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj",
+        "projectName": "QuanLyNhanVienAPI",
+        "projectPath": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj",
+        "packagesPath": "C:\\Users\\lehuu\\.nuget\\packages\\",
+        "outputPath": "D:\\tài liệu năm 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\obj\\",
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

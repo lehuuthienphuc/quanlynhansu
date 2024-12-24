@@ -6,7 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+<<<<<<< HEAD
 using System.Text.RegularExpressions;
+=======
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
 
 namespace QuanLyNhanVienAPI.Controllers
 {
@@ -14,6 +17,7 @@ namespace QuanLyNhanVienAPI.Controllers
     [Route("api/[controller]")]
     public class EmployeeController : ControllerBase
     {
+<<<<<<< HEAD
         private readonly ApplicationDbContext _context;
 
         public EmployeeController(ApplicationDbContext context)
@@ -21,6 +25,14 @@ namespace QuanLyNhanVienAPI.Controllers
             _context = context;
         }
 
+=======
+
+        private readonly ApplicationDbContext _context;
+
+        public EmployeeController(ApplicationDbContext context) {
+            _context = context;
+        }
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
         // Lấy danh sách nhân viên
         [HttpGet]
         public IActionResult GetEmployees()
@@ -29,6 +41,7 @@ namespace QuanLyNhanVienAPI.Controllers
             return Ok(employees);
         }
 
+<<<<<<< HEAD
         // Lấy thông tin nhân viên theo ID
         [HttpGet("findEmployee")]
         public IActionResult GetEmployee(int id)
@@ -41,20 +54,30 @@ namespace QuanLyNhanVienAPI.Controllers
             return Ok(employee);
         }
 
+=======
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
         // Thêm mới nhân viên
         [HttpPost("addEmployee")]
         public async Task<IActionResult> AddEmployee([FromBody] NhanVien newEmployee)
         {
             try
             {
+<<<<<<< HEAD
                 if (newEmployee == null)
                 {
                     return BadRequest(new { Message = "Dữ liệu không hợp lệ." });
+=======
+                // Validate dữ liệu
+                if (newEmployee == null)
+                {
+                    return BadRequest(new { Message = "Dữ liệu không hợp lệ" });
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
                 }
 
                 // Kiểm tra email trùng
                 if (await _context.NhanVien.AnyAsync(e => e.Email == newEmployee.Email))
                 {
+<<<<<<< HEAD
                     return Conflict(new { Message = "Email đã tồn tại." });
                 }
 
@@ -139,6 +162,18 @@ namespace QuanLyNhanVienAPI.Controllers
             catch (DbUpdateException dbEx)
             {
                 return StatusCode(500, new { Message = "Lỗi khi lưu dữ liệu vào cơ sở dữ liệu: " + dbEx.Message });
+=======
+                    return Conflict(new { Message = "Email đã tồn tại" });
+                }
+
+                // Thêm vào DbContext
+                await _context.NhanVien.AddAsync(newEmployee);
+
+                // Lưu thay đổi vào database
+                await _context.SaveChangesAsync();
+
+                return Ok(new { Message = "Thêm nhân viên thành công", Data = newEmployee });
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
             }
             catch (Exception ex)
             {
@@ -146,6 +181,10 @@ namespace QuanLyNhanVienAPI.Controllers
             }
         }
 
+<<<<<<< HEAD
+=======
+        // Sửa
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
         // Xóa nhiều nhân viên theo ID
         [HttpDelete("batchDelete")]
         public async Task<IActionResult> BatchDeleteEmployees([FromBody] List<int> ids)
@@ -167,7 +206,11 @@ namespace QuanLyNhanVienAPI.Controllers
                 }
 
                 _context.NhanVien.RemoveRange(employeesToDelete);
+<<<<<<< HEAD
                 await _context.SaveChangesAsync();
+=======
+                await _context.SaveChangesAsync(); // Đảm bảo lưu thay đổi vào database
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
 
                 return Ok(new
                 {
@@ -181,16 +224,24 @@ namespace QuanLyNhanVienAPI.Controllers
                 return StatusCode(500, new
                 {
                     Success = false,
+<<<<<<< HEAD
                     Message = "Lỗi khi xóa nhân viên.",
+=======
+                    Message = "Lỗi khi xóa nhân viên",
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
                     Error = ex.Message
                 });
             }
         }
 
+<<<<<<< HEAD
         // Kiểm tra giới tính hợp lệ
         private bool IsValidGender(string gender)
         {
             return gender == "Nam" || gender == "Nữ";
         }
+=======
+
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
     }
 }

@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\homin\\OneDrive\\M\u00E1y t\u00EDnh\\quanlynhansu\\QuanLyNhanVienAPI\\",
   "Documents": [
     {
@@ -21,6 +22,32 @@
     {
       "AbsoluteMoniker": "D:0:0:{C01DF2E3-ED9B-43B8-961F-FEC0F397318A}|QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj|c:\\users\\homin\\onedrive\\m\u00E1y t\u00EDnh\\quanlynhansu\\quanlynhanvienapi\\quanlynhanvienapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C01DF2E3-ED9B-43B8-961F-FEC0F397318A}|QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj|solutionrelative:quanlynhanvienapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+=======
+  "WorkspaceRootPath": "D:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C01DF2E3-ED9B-43B8-961F-FEC0F397318A}|QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj|d:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\quanlynhanvienapi\\quanlynhanvienapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C01DF2E3-ED9B-43B8-961F-FEC0F397318A}|QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj|solutionrelative:quanlynhanvienapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C01DF2E3-ED9B-43B8-961F-FEC0F397318A}|QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj|d:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\quanlynhanvienapi\\quanlynhanvienapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C01DF2E3-ED9B-43B8-961F-FEC0F397318A}|QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj|solutionrelative:quanlynhanvienapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C01DF2E3-ED9B-43B8-961F-FEC0F397318A}|QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj|d:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\quanlynhanvienapi\\quanlynhanvienapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C01DF2E3-ED9B-43B8-961F-FEC0F397318A}|QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj|solutionrelative:quanlynhanvienapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C01DF2E3-ED9B-43B8-961F-FEC0F397318A}|QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj|d:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\quanlynhanvienapi\\quanlynhanvienapi\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C01DF2E3-ED9B-43B8-961F-FEC0F397318A}|QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj|solutionrelative:quanlynhanvienapi\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C01DF2E3-ED9B-43B8-961F-FEC0F397318A}|QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj|d:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\quanlynhanvienapi\\quanlynhanvienapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C01DF2E3-ED9B-43B8-961F-FEC0F397318A}|QuanLyNhanVienAPI\\QuanLyNhanVienAPI.csproj|solutionrelative:quanlynhanvienapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
     }
   ],
   "DocumentGroupContainers": [
@@ -30,6 +57,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 7,
           "Children": [
             {
@@ -66,10 +94,48 @@
               "RelativeToolTip": "QuanLyNhanVienAPI\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+=======
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAjwAkBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-11-29T07:27:24.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\Program.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVienAPI\\Program.cs",
+              "ToolTip": "D:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\Program.cs",
+              "RelativeToolTip": "QuanLyNhanVienAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T19:27:13.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVienAPI\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "QuanLyNhanVienAPI\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
               "WhenOpened": "2024-11-28T19:22:14.539Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\homin\\OneDrive\\M\u00E1y t\u00EDnh\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\appsettings.json",
@@ -89,11 +155,34 @@
               "ToolTip": "C:\\Users\\homin\\OneDrive\\M\u00E1y t\u00EDnh\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\Models\\NhanVien.cs",
               "RelativeToolTip": "QuanLyNhanVienAPI\\Models\\NhanVien.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAiwBcAAAAxAAAAAAAAAA==",
+=======
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "QuanLyNhanVienAPI\\appsettings.json",
+              "ToolTip": "D:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\appsettings.json*",
+              "RelativeToolTip": "QuanLyNhanVienAPI\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-28T19:15:52.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NhanVien.cs",
+              "DocumentMoniker": "D:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\Models\\NhanVien.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVienAPI\\Models\\NhanVien.cs",
+              "ToolTip": "D:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\Models\\NhanVien.cs",
+              "RelativeToolTip": "QuanLyNhanVienAPI\\Models\\NhanVien.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBcAAAAxAAAAAAAAAA==",
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T20:26:39.493Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "C:\\Users\\homin\\OneDrive\\M\u00E1y t\u00EDnh\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\Controllers\\EmployeeController.cs",
@@ -104,6 +193,17 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T06:18:58.147Z",
               "EditorCaption": ""
+=======
+              "DocumentIndex": 3,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVienAPI\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\t\u00E0i li\u1EC7u n\u0103m 4 hk1\\phat trien phan mem chuyen nghiep\\quanlynhansu\\quanlynhansu\\QuanLyNhanVienAPI\\QuanLyNhanVienAPI\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "QuanLyNhanVienAPI\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAcwEMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T06:18:58.147Z"
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
             }
           ]
         }

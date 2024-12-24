@@ -7,7 +7,11 @@ interface Staff {
   manhanvien: number;
   hoten: string;
   ngaysinh: string;
+<<<<<<< HEAD
   gioiTinh: string;
+=======
+  gioitinh: string;
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
   ngayvaolam: string;
   email: string;
   vitri: string;
@@ -25,7 +29,11 @@ export class StaffFormComponent implements OnInit {
     manhanvien: 0,
     hoten: '',
     ngaysinh: '',
+<<<<<<< HEAD
     gioiTinh: '',
+=======
+    gioitinh: '',
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
     ngayvaolam: '',
     email: '',
     vitri: '',
@@ -58,10 +66,17 @@ export class StaffFormComponent implements OnInit {
           maNhanVien: this.staff.manhanvien,
           hoTen: this.staff.hoten.trim(),
           ngaySinh: new Date(this.staff.ngaysinh).toISOString(),
+<<<<<<< HEAD
           gioiTinh: this.staff.gioiTinh,
           ngayVaoLam: new Date(this.staff.ngayvaolam).toISOString(),
           email: this.staff.email.trim().toLowerCase(),
           viTri: this.staff.vitri.trim(),
+=======
+          gioitinh: this.staff.gioitinh,
+          ngayVaoLam: new Date(this.staff.ngayvaolam).toISOString(),
+          email: this.staff.email.trim().toLowerCase(),
+          vitri: this.staff.vitri.trim(),
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
           calamviec: this.staff.calamviec.trim(),
           luong: Number(this.staff.luong)
         };

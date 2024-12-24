@@ -14,6 +14,7 @@
 .edit-button:hover {
     background-color: #218838; /* Màu xanh lá đậm hơn khi hover */
 }
+<<<<<<< HEAD
 
 
 table {
@@ -28,3 +29,5 @@ table {
     text-align: left;
     border: 1px solid #ddd;
   }
+=======
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611

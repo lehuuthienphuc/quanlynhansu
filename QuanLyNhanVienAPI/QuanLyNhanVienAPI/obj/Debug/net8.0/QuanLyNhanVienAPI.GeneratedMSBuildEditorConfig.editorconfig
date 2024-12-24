@@ -9,11 +9,19 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QuanLyNhanVienAPI
 build_property.RootNamespace = QuanLyNhanVienAPI
+<<<<<<< HEAD
 build_property.ProjectDir = D:\hoc dai hoc\nam 4\Phát triển phần mềm chuyên nghiệp\demo\quanlynhansu(1)\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\
+=======
+build_property.ProjectDir = D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = D:\hoc dai hoc\nam 4\Phát triển phần mềm chuyên nghiệp\demo\quanlynhansu(1)\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI
+=======
+build_property.MSBuildProjectDirectory = D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
 build_property._RazorSourceGeneratorDebug = 

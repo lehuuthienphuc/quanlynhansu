@@ -259,6 +259,7 @@ C:\Users\homin\OneDrive\Máy tính\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVien
 C:\Users\homin\OneDrive\Máy tính\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\homin\OneDrive\Máy tính\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\homin\OneDrive\Máy tính\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+<<<<<<< HEAD
 D:\hoc dai hoc\nam 4\Phát triển phần mềm chuyên nghiệp\demo\quanlynhansu(1)\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\appsettings.Development.json
 D:\hoc dai hoc\nam 4\Phát triển phần mềm chuyên nghiệp\demo\quanlynhansu(1)\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\appsettings.json
 D:\hoc dai hoc\nam 4\Phát triển phần mềm chuyên nghiệp\demo\quanlynhansu(1)\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\QuanLyNhanVienAPI.exe
@@ -383,3 +384,128 @@ D:\hoc dai hoc\nam 4\Phát triển phần mềm chuyên nghiệp\demo\quanlynhan
 D:\hoc dai hoc\nam 4\Phát triển phần mềm chuyên nghiệp\demo\quanlynhansu(1)\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\QuanLyNhanVienAPI.pdb
 D:\hoc dai hoc\nam 4\Phát triển phần mềm chuyên nghiệp\demo\quanlynhansu(1)\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\QuanLyNhanVienAPI.genruntimeconfig.cache
 D:\hoc dai hoc\nam 4\Phát triển phần mềm chuyên nghiệp\demo\quanlynhansu(1)\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\ref\QuanLyNhanVienAPI.dll
+=======
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\appsettings.Development.json
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\appsettings.json
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\QuanLyNhanVienAPI.exe
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\QuanLyNhanVienAPI.deps.json
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\QuanLyNhanVienAPI.runtimeconfig.json
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\QuanLyNhanVienAPI.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\QuanLyNhanVienAPI.pdb
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Google.Protobuf.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Humanizer.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\MySql.Data.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\MySqlConnector.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\System.CodeDom.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\ZstdSharp.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\QuanLyNhanVienAPI.csproj.AssemblyReference.cache
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\QuanLyNhanVienAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\QuanLyNhanVienAPI.AssemblyInfoInputs.cache
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\QuanLyNhanVienAPI.AssemblyInfo.cs
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\QuanLyNhanVienAPI.csproj.CoreCompileInputs.cache
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\QuanLyNhanVienAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\QuanLyNhanVienAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\QuanLyNhanVienAPI.sourcelink.json
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\staticwebassets.build.json
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\staticwebassets.development.json
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\staticwebassets\msbuild.QuanLyNhanVienAPI.Microsoft.AspNetCore.StaticWebAssets.props
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.QuanLyNhanVienAPI.props
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.QuanLyNhanVienAPI.props
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.QuanLyNhanVienAPI.props
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\staticwebassets.pack.json
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\scopedcss\bundle\QuanLyNhanVienAPI.styles.css
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\QuanLyNh.AA8B3FE2.Up2Date
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\QuanLyNhanVienAPI.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\refint\QuanLyNhanVienAPI.dll
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\QuanLyNhanVienAPI.pdb
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\QuanLyNhanVienAPI.genruntimeconfig.cache
+D:\tài liệu năm 4 hk1\phat trien phan mem chuyen nghiep\quanlynhansu\quanlynhansu\QuanLyNhanVienAPI\QuanLyNhanVienAPI\obj\Debug\net8.0\ref\QuanLyNhanVienAPI.dll
+>>>>>>> cb5e124c38e7e96c2c591fcacc7d49de5cc80611
